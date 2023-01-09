@@ -2,18 +2,10 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
 const deps = require("./package.json").dependencies;
-module.exports = {
-  output: {
-    publicPath: "http://localhost:5201/",
-  },
 
+module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
-  },
-
-  devServer: {
-    port: 5201,
-    historyApiFallback: true,
   },
 
   module: {
