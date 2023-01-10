@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {ZZFX, zzfx} from 'ZzFX'
+import {ZZFX, zzfx} from 'ZzFX';
+import '../index.css';
   
 class PiGame extends Component {
     // render() {
@@ -322,28 +323,29 @@ class PiGame extends Component {
   }
 
   render() {
+    
       return(
           <div>
-              <h1>π game</h1>
+              <h1 className="h1--pigame">π game</h1>
               <div className="instruction">
               <div className="keys"><kbd>&#8593;</kbd><kbd>&#8592;</kbd><kbd>&#8595;</kbd><kbd>&#8594;</kbd></div>
               <div className="text">Use the arrow keys to move the π.<br/>Remain undetected for as long as possible.</div>
               </div>
               <div className="game">
-              <canvas></canvas>
-              <button id="start">START</button>
+              <canvas className="canvas--pigame"></canvas>
+              <button id="start" className="button--pigame">START</button>
               </div>
               <dialog id="dialog">
               <div className="inner">
                   <div>
-                  <h2>Game Over</h2>
+                  <h2 className="h2--pigame">Game Over</h2>
                   <p>Your score:</p><span className="score" id="score"></span><span className="highscore">New Highscore!</span>
                   </div>
-                  <button id="reset">PLAY AGAIN</button>
+                  <button id="reset" className="button--pigame">PLAY AGAIN</button>
               </div>
               </dialog>
               <label className="mute">
-              <input id="mute" type="checkbox"/><i className="fa-solid fa-volume-high"></i><i className="fa-solid fa-volume-xmark"></i>
+              <input id="mute" type="checkbox" defaultChecked="checked"/><i className="fa-solid fa-volume-high"></i><i className="fa-solid fa-volume-xmark"></i>
               </label>
           </div>
       );

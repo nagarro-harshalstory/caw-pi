@@ -9,19 +9,10 @@ body {
   margin-top: 20px;
 }
 
-* {
+/* * {
   box-sizing: border-box;
 }
-
-body {
-  width: 100%;
-  background: #280E44;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-}
+*/
 
 .instruction {
   padding: 5px 25px 5px 10px;
@@ -68,16 +59,16 @@ kbd:nth-of-type(4) {
   justify-content: center;
 }
 
-canvas {
+.canvas--pigame {
   width: 400px;
   height: 400px;
 }
 
-h1, h2, button {
+.h1--pigame, .h2--pigame, .button--pigame {
   font-family: "Press Start 2P", sans-serif;
 }
 
-h1 {
+.h1--pigame {
   word-spacing: -2rem;
   font-size: 5rem;
   font-weight: 700;
@@ -85,7 +76,7 @@ h1 {
   text-shadow: #EF476F 2px 2px 0px, #9BA2FF 4px 4px 0px, #470FF4 6px 6px 0px;
 }
 
-button {
+.button--pigame {
   position: absolute;
   padding: 20px;
   background: #470FF4;
@@ -97,15 +88,15 @@ button {
   box-shadow: 2px 10px 0 0 #15044d;
   transition: all 0.15s ease;
 }
-button:hover {
+.button--pigame:hover {
   background: #3e0adf;
 }
-button:active {
+.button--pigame:active {
   box-shadow: 2px 2px 0 0 #15044d;
   transform: translate(0px, 8px);
 }
 
-button.hide {
+.button--pigame.hide {
   opacity: 0;
   visibility: hidden;
 }
@@ -128,7 +119,7 @@ dialog .inner {
   height: 100%;
   min-height: 400px;
 }
-dialog button {
+dialog .button--pigame {
   position: relative;
 }
 dialog p, dialog span {
