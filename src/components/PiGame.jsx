@@ -39,7 +39,8 @@ class PiGame extends Component {
       const audio = new Audio('https://assets.codepen.io/539557/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3');
       audio.volume = 0.1;
       audio.loop = true;
-      audio.oncanplaythrough = audio.play();
+      // audio.oncanplaythrough = audio.play();
+      // muting audio. Very irritating! ;)
 
       // -----------------------------
       // 	Config
