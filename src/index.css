@@ -69,7 +69,7 @@ kbd:nth-of-type(4) {
 }
 
 .h1--pigame {
-  word-spacing: -2rem;
+  word-spacing: 1rem;
   font-size: 5rem;
   font-weight: 700;
   color: #fcc74c;
