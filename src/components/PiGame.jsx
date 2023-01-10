@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ZZFX, zzfx} from 'ZzFX';
+import {zzfx} from 'ZzFX';
 import '../index.css';
   
 class PiGame extends Component {
